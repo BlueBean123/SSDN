@@ -61,7 +61,7 @@ torchrun --nproc_per_node=2 scripts/train.py \
     --epochs  \
     --checkpoint_dir experiments/ssdn_weights
 ```
-2. Evaluation & Metric Calculation
+### 2. Evaluation & Metric Calculation
 To evaluate the model performance, run the following script. It performs inference and calculates PSNR/SSIM on the Y-channel with boundary cropping (shaving) matching the scale factor:
 ```bash
 python scripts/test.py \
